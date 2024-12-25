@@ -2142,38 +2142,6 @@ gen_addr:
 	addq $16, %rsp
 	jmp .L.end.37
 .L.else.37:
-.data
-.L.str.31:
-	.byte 85
-	.byte 110
-	.byte 107
-	.byte 110
-	.byte 111
-	.byte 119
-	.byte 110
-	.byte 32
-	.byte 107
-	.byte 105
-	.byte 110
-	.byte 100
-	.byte 32
-	.byte 111
-	.byte 102
-	.byte 32
-	.byte 110
-	.byte 111
-	.byte 100
-	.byte 101
-	.byte 10
-	.byte 0
-.text
-	leaq .L.str.31(%rip), %rax
-	push %rax
-	leaq eprintf(%rip), %rax
-	movq %rax, %r10
-	movq $0, %rax
-	callq *%r10
-	addq $8, %rsp
 .L.end.37:
 .L.end.35:
 .L.end.34:
@@ -2199,14 +2167,14 @@ gen_lhs_rhs:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.32:
+.L.str.31:
 	.byte 37
 	.byte 114
 	.byte 97
 	.byte 120
 	.byte 0
 .text
-	leaq .L.str.32(%rip), %rax
+	leaq .L.str.31(%rip), %rax
 	push %rax
 	leaq 16(%rbp), %rax
 	movq (%rax), %rax
@@ -2228,14 +2196,14 @@ gen_lhs_rhs:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.33:
+.L.str.32:
 	.byte 37
 	.byte 114
 	.byte 100
 	.byte 105
 	.byte 0
 .text
-	leaq .L.str.33(%rip), %rax
+	leaq .L.str.32(%rip), %rax
 	push %rax
 	leaq 16(%rbp), %rax
 	movq (%rax), %rax
@@ -2279,7 +2247,7 @@ alloc_stack:
 	push %rax
 	push $1
 .data
-.L.str.34:
+.L.str.33:
 	.byte 9
 	.byte 115
 	.byte 117
@@ -2299,7 +2267,7 @@ alloc_stack:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.34(%rip), %rax
+	leaq .L.str.33(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -2340,7 +2308,7 @@ gen_pop_size:
 	push %rax
 	push $1
 .data
-.L.str.35:
+.L.str.34:
 	.byte 9
 	.byte 97
 	.byte 100
@@ -2360,7 +2328,7 @@ gen_pop_size:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.35(%rip), %rax
+	leaq .L.str.34(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -2381,7 +2349,7 @@ gen_pop:
 	push %rax
 	push $1
 .data
-.L.str.36:
+.L.str.35:
 	.byte 9
 	.byte 112
 	.byte 111
@@ -2392,7 +2360,7 @@ gen_pop:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.36(%rip), %rax
+	leaq .L.str.35(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -2431,7 +2399,7 @@ gen_push_num:
 	push %rax
 	push $1
 .data
-.L.str.37:
+.L.str.36:
 	.byte 9
 	.byte 112
 	.byte 117
@@ -2444,7 +2412,7 @@ gen_push_num:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.37(%rip), %rax
+	leaq .L.str.36(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -2483,7 +2451,7 @@ gen_push:
 	push %rax
 	push $1
 .data
-.L.str.38:
+.L.str.37:
 	.byte 9
 	.byte 112
 	.byte 117
@@ -2495,7 +2463,7 @@ gen_push:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.38(%rip), %rax
+	leaq .L.str.37(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -2692,7 +2660,7 @@ gen_stmt:
 	push %rax
 	push $1
 .data
-.L.str.39:
+.L.str.38:
 	.byte 9
 	.byte 115
 	.byte 117
@@ -2712,7 +2680,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.39(%rip), %rax
+	leaq .L.str.38(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -2720,7 +2688,7 @@ gen_stmt:
 	callq *%r10
 	addq $32, %rsp
 .data
-.L.str.40:
+.L.str.39:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -2759,7 +2727,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.40(%rip), %rax
+	leaq .L.str.39(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -2767,7 +2735,7 @@ gen_stmt:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.41:
+.L.str.40:
 	.byte 9
 	.byte 106
 	.byte 109
@@ -2782,7 +2750,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.41(%rip), %rax
+	leaq .L.str.40(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -2829,14 +2797,14 @@ gen_stmt:
 	push %rax
 	push $1
 .data
-.L.str.42:
+.L.str.41:
 	.byte 37
 	.byte 115
 	.byte 58
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.42(%rip), %rax
+	leaq .L.str.41(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -2875,7 +2843,7 @@ gen_stmt:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.43:
+.L.str.42:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -2897,7 +2865,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.43(%rip), %rax
+	leaq .L.str.42(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -2915,7 +2883,7 @@ gen_stmt:
 	push %rax
 	push $1
 .data
-.L.str.44:
+.L.str.43:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -2935,7 +2903,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.44(%rip), %rax
+	leaq .L.str.43(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -2943,7 +2911,7 @@ gen_stmt:
 	callq *%r10
 	addq $32, %rsp
 .data
-.L.str.45:
+.L.str.44:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -2960,7 +2928,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.45(%rip), %rax
+	leaq .L.str.44(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -2968,7 +2936,7 @@ gen_stmt:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.46:
+.L.str.45:
 	.byte 9
 	.byte 114
 	.byte 101
@@ -2982,7 +2950,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.46(%rip), %rax
+	leaq .L.str.45(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3036,7 +3004,7 @@ gen_stmt:
 .L.else.45:
 .L.end.45:
 .data
-.L.str.47:
+.L.str.46:
 	.byte 9
 	.byte 108
 	.byte 101
@@ -3046,7 +3014,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.47(%rip), %rax
+	leaq .L.str.46(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3054,7 +3022,7 @@ gen_stmt:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.48:
+.L.str.47:
 	.byte 9
 	.byte 114
 	.byte 101
@@ -3062,7 +3030,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.48(%rip), %rax
+	leaq .L.str.47(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3123,7 +3091,7 @@ gen_stmt:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.49:
+.L.str.48:
 	.byte 9
 	.byte 99
 	.byte 109
@@ -3142,7 +3110,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.49(%rip), %rax
+	leaq .L.str.48(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3156,7 +3124,7 @@ gen_stmt:
 	push %rax
 	push $1
 .data
-.L.str.50:
+.L.str.49:
 	.byte 9
 	.byte 106
 	.byte 110
@@ -3175,7 +3143,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.50(%rip), %rax
+	leaq .L.str.49(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3202,7 +3170,7 @@ gen_stmt:
 	push %rax
 	push $1
 .data
-.L.str.51:
+.L.str.50:
 	.byte 9
 	.byte 106
 	.byte 109
@@ -3220,7 +3188,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.51(%rip), %rax
+	leaq .L.str.50(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3234,7 +3202,7 @@ gen_stmt:
 	push %rax
 	push $1
 .data
-.L.str.52:
+.L.str.51:
 	.byte 46
 	.byte 76
 	.byte 46
@@ -3249,7 +3217,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.52(%rip), %rax
+	leaq .L.str.51(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3291,7 +3259,7 @@ gen_stmt:
 	push %rax
 	push $1
 .data
-.L.str.53:
+.L.str.52:
 	.byte 46
 	.byte 76
 	.byte 46
@@ -3305,7 +3273,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.53(%rip), %rax
+	leaq .L.str.52(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3344,7 +3312,7 @@ gen_stmt:
 	push %rax
 	push $2
 .data
-.L.str.54:
+.L.str.53:
 	.byte 9
 	.byte 106
 	.byte 109
@@ -3361,7 +3329,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.54(%rip), %rax
+	leaq .L.str.53(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3400,7 +3368,7 @@ gen_stmt:
 	push %rax
 	push $2
 .data
-.L.str.55:
+.L.str.54:
 	.byte 46
 	.byte 76
 	.byte 46
@@ -3413,7 +3381,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.55(%rip), %rax
+	leaq .L.str.54(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3495,7 +3463,7 @@ gen_stmt:
 	push %rax
 	push $1
 .data
-.L.str.56:
+.L.str.55:
 	.byte 46
 	.byte 76
 	.byte 46
@@ -3517,7 +3485,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.56(%rip), %rax
+	leaq .L.str.55(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3538,7 +3506,7 @@ gen_stmt:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.57:
+.L.str.56:
 	.byte 9
 	.byte 99
 	.byte 109
@@ -3557,7 +3525,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.57(%rip), %rax
+	leaq .L.str.56(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3571,7 +3539,7 @@ gen_stmt:
 	push %rax
 	push $1
 .data
-.L.str.58:
+.L.str.57:
 	.byte 9
 	.byte 106
 	.byte 110
@@ -3595,7 +3563,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.58(%rip), %rax
+	leaq .L.str.57(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3650,7 +3618,7 @@ gen_stmt:
 	push %rax
 	push $1
 .data
-.L.str.59:
+.L.str.58:
 	.byte 9
 	.byte 106
 	.byte 109
@@ -3676,7 +3644,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.59(%rip), %rax
+	leaq .L.str.58(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3690,7 +3658,7 @@ gen_stmt:
 	push %rax
 	push $1
 .data
-.L.str.60:
+.L.str.59:
 	.byte 46
 	.byte 76
 	.byte 46
@@ -3710,7 +3678,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.60(%rip), %rax
+	leaq .L.str.59(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3749,14 +3717,14 @@ gen_stmt:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.61:
+.L.str.60:
 	.byte 37
 	.byte 114
 	.byte 97
 	.byte 120
 	.byte 0
 .text
-	leaq .L.str.61(%rip), %rax
+	leaq .L.str.60(%rip), %rax
 	push %rax
 	leaq 16(%rbp), %rax
 	movq (%rax), %rax
@@ -3780,14 +3748,14 @@ gen_stmt:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.62:
+.L.str.61:
 	.byte 37
 	.byte 114
 	.byte 100
 	.byte 105
 	.byte 0
 .text
-	leaq .L.str.62(%rip), %rax
+	leaq .L.str.61(%rip), %rax
 	push %rax
 	leaq 16(%rbp), %rax
 	movq (%rax), %rax
@@ -3814,7 +3782,7 @@ gen_stmt:
 .L.else.53:
 .L.end.53:
 .data
-.L.str.63:
+.L.str.62:
 	.byte 103
 	.byte 101
 	.byte 110
@@ -3838,7 +3806,7 @@ gen_stmt:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.63(%rip), %rax
+	leaq .L.str.62(%rip), %rax
 	push %rax
 	leaq eprintf(%rip), %rax
 	movq %rax, %r10
@@ -3959,7 +3927,7 @@ gen_expr:
 	pop %rdi
 	movl %eax, (%rdi)
 .data
-.L.str.64:
+.L.str.63:
 	.byte 46
 	.byte 100
 	.byte 97
@@ -3968,7 +3936,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.64(%rip), %rax
+	leaq .L.str.63(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -3982,7 +3950,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.65:
+.L.str.64:
 	.byte 46
 	.byte 76
 	.byte 46
@@ -3996,7 +3964,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.65(%rip), %rax
+	leaq .L.str.64(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4031,7 +3999,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.66:
+.L.str.65:
 	.byte 9
 	.byte 46
 	.byte 98
@@ -4044,7 +4012,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.66(%rip), %rax
+	leaq .L.str.65(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4068,7 +4036,7 @@ gen_expr:
 	jmp .L.while.start.57
 .L.while.end.57:
 .data
-.L.str.67:
+.L.str.66:
 	.byte 9
 	.byte 46
 	.byte 98
@@ -4080,7 +4048,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.67(%rip), %rax
+	leaq .L.str.66(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4088,7 +4056,7 @@ gen_expr:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.68:
+.L.str.67:
 	.byte 46
 	.byte 116
 	.byte 101
@@ -4097,7 +4065,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.68(%rip), %rax
+	leaq .L.str.67(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4111,7 +4079,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.69:
+.L.str.68:
 	.byte 9
 	.byte 108
 	.byte 101
@@ -4144,7 +4112,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.69(%rip), %rax
+	leaq .L.str.68(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4178,7 +4146,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.70:
+.L.str.69:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -4198,7 +4166,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.70(%rip), %rax
+	leaq .L.str.69(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4237,14 +4205,14 @@ gen_expr:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.71:
+.L.str.70:
 	.byte 37
 	.byte 114
 	.byte 97
 	.byte 120
 	.byte 0
 .text
-	leaq .L.str.71(%rip), %rax
+	leaq .L.str.70(%rip), %rax
 	push %rax
 	leaq 16(%rbp), %rax
 	movq (%rax), %rax
@@ -4268,14 +4236,14 @@ gen_expr:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.72:
+.L.str.71:
 	.byte 37
 	.byte 114
 	.byte 100
 	.byte 105
 	.byte 0
 .text
-	leaq .L.str.72(%rip), %rax
+	leaq .L.str.71(%rip), %rax
 	push %rax
 	leaq 16(%rbp), %rax
 	movq (%rax), %rax
@@ -4393,7 +4361,7 @@ gen_expr:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.73:
+.L.str.72:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -4415,7 +4383,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.73(%rip), %rax
+	leaq .L.str.72(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4423,7 +4391,7 @@ gen_expr:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.74:
+.L.str.73:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -4442,7 +4410,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.74(%rip), %rax
+	leaq .L.str.73(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4450,7 +4418,7 @@ gen_expr:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.75:
+.L.str.74:
 	.byte 9
 	.byte 99
 	.byte 97
@@ -4467,7 +4435,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.75(%rip), %rax
+	leaq .L.str.74(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4500,7 +4468,7 @@ gen_expr:
 	cmpq $1, %rax
 	jne .L.else.62
 .data
-.L.str.76:
+.L.str.75:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -4522,7 +4490,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.76(%rip), %rax
+	leaq .L.str.75(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4546,12 +4514,59 @@ gen_expr:
 	cmpq $1, %rax
 	jne .L.else.63
 .data
-.L.str.77:
+.L.str.76:
 	.byte 9
 	.byte 109
 	.byte 111
 	.byte 118
 	.byte 115
+	.byte 98
+	.byte 113
+	.byte 32
+	.byte 37
+	.byte 37
+	.byte 97
+	.byte 108
+	.byte 44
+	.byte 32
+	.byte 37
+	.byte 37
+	.byte 114
+	.byte 97
+	.byte 120
+	.byte 10
+	.byte 0
+.text
+	leaq .L.str.76(%rip), %rax
+	push %rax
+	leaq printf(%rip), %rax
+	movq %rax, %r10
+	movq $0, %rax
+	callq *%r10
+	addq $8, %rsp
+	jmp .L.end.63
+.L.else.63:
+	movq $11, %rax
+	push %rax
+	leaq 24(%rbp), %rax
+	movq (%rax), %rax
+	addq $112, %rax
+	movq (%rax), %rax
+	addq $0, %rax
+	movslq (%rax), %rax
+	pop %rdi
+	cmpq %rdi, %rax
+	sete %al
+	movzbq %al, %rax
+	cmpq $1, %rax
+	jne .L.else.64
+.data
+.L.str.77:
+	.byte 9
+	.byte 109
+	.byte 111
+	.byte 118
+	.byte 122
 	.byte 98
 	.byte 113
 	.byte 32
@@ -4576,53 +4591,6 @@ gen_expr:
 	movq $0, %rax
 	callq *%r10
 	addq $8, %rsp
-	jmp .L.end.63
-.L.else.63:
-	movq $11, %rax
-	push %rax
-	leaq 24(%rbp), %rax
-	movq (%rax), %rax
-	addq $112, %rax
-	movq (%rax), %rax
-	addq $0, %rax
-	movslq (%rax), %rax
-	pop %rdi
-	cmpq %rdi, %rax
-	sete %al
-	movzbq %al, %rax
-	cmpq $1, %rax
-	jne .L.else.64
-.data
-.L.str.78:
-	.byte 9
-	.byte 109
-	.byte 111
-	.byte 118
-	.byte 122
-	.byte 98
-	.byte 113
-	.byte 32
-	.byte 37
-	.byte 37
-	.byte 97
-	.byte 108
-	.byte 44
-	.byte 32
-	.byte 37
-	.byte 37
-	.byte 114
-	.byte 97
-	.byte 120
-	.byte 10
-	.byte 0
-.text
-	leaq .L.str.78(%rip), %rax
-	push %rax
-	leaq printf(%rip), %rax
-	movq %rax, %r10
-	movq $0, %rax
-	callq *%r10
-	addq $8, %rsp
 	jmp .L.end.64
 .L.else.64:
 	movq $2, %rax
@@ -4640,7 +4608,7 @@ gen_expr:
 	cmpq $1, %rax
 	jne .L.else.65
 .data
-.L.str.79:
+.L.str.78:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -4663,7 +4631,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.79(%rip), %rax
+	leaq .L.str.78(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4687,7 +4655,7 @@ gen_expr:
 	cmpq $1, %rax
 	jne .L.else.66
 .data
-.L.str.80:
+.L.str.79:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -4710,7 +4678,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.80(%rip), %rax
+	leaq .L.str.79(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4862,7 +4830,7 @@ gen_expr:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.81:
+.L.str.80:
 	.byte 9
 	.byte 99
 	.byte 109
@@ -4881,7 +4849,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.81(%rip), %rax
+	leaq .L.str.80(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4889,7 +4857,7 @@ gen_expr:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.82:
+.L.str.81:
 	.byte 9
 	.byte 115
 	.byte 101
@@ -4903,7 +4871,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.82(%rip), %rax
+	leaq .L.str.81(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4911,7 +4879,7 @@ gen_expr:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.83:
+.L.str.82:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -4934,7 +4902,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.83(%rip), %rax
+	leaq .L.str.82(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -4978,7 +4946,7 @@ gen_expr:
 	callq *%r10
 	addq $24, %rsp
 .data
-.L.str.84:
+.L.str.83:
 	.byte 9
 	.byte 97
 	.byte 100
@@ -5000,7 +4968,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.84(%rip), %rax
+	leaq .L.str.83(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5044,7 +5012,7 @@ gen_expr:
 	callq *%r10
 	addq $24, %rsp
 .data
-.L.str.85:
+.L.str.84:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -5066,7 +5034,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.85(%rip), %rax
+	leaq .L.str.84(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5074,7 +5042,7 @@ gen_expr:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.86:
+.L.str.85:
 	.byte 9
 	.byte 115
 	.byte 104
@@ -5094,7 +5062,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.86(%rip), %rax
+	leaq .L.str.85(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5138,7 +5106,7 @@ gen_expr:
 	callq *%r10
 	addq $24, %rsp
 .data
-.L.str.87:
+.L.str.86:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -5160,7 +5128,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.87(%rip), %rax
+	leaq .L.str.86(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5168,7 +5136,7 @@ gen_expr:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.88:
+.L.str.87:
 	.byte 9
 	.byte 115
 	.byte 104
@@ -5188,7 +5156,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.88(%rip), %rax
+	leaq .L.str.87(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5232,7 +5200,7 @@ gen_expr:
 	callq *%r10
 	addq $24, %rsp
 .data
-.L.str.89:
+.L.str.88:
 	.byte 9
 	.byte 115
 	.byte 117
@@ -5254,7 +5222,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.89(%rip), %rax
+	leaq .L.str.88(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5298,7 +5266,7 @@ gen_expr:
 	callq *%r10
 	addq $24, %rsp
 .data
-.L.str.90:
+.L.str.89:
 	.byte 9
 	.byte 97
 	.byte 110
@@ -5320,7 +5288,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.90(%rip), %rax
+	leaq .L.str.89(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5364,7 +5332,7 @@ gen_expr:
 	callq *%r10
 	addq $24, %rsp
 .data
-.L.str.91:
+.L.str.90:
 	.byte 9
 	.byte 111
 	.byte 114
@@ -5385,7 +5353,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.91(%rip), %rax
+	leaq .L.str.90(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5429,7 +5397,7 @@ gen_expr:
 	callq *%r10
 	addq $24, %rsp
 .data
-.L.str.92:
+.L.str.91:
 	.byte 9
 	.byte 105
 	.byte 109
@@ -5452,7 +5420,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.92(%rip), %rax
+	leaq .L.str.91(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5523,7 +5491,7 @@ gen_expr:
 	cmpq $1, %rax
 	jne .L.else.80
 .data
-.L.str.93:
+.L.str.92:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -5541,7 +5509,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.93(%rip), %rax
+	leaq .L.str.92(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5549,7 +5517,7 @@ gen_expr:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.94:
+.L.str.93:
 	.byte 9
 	.byte 100
 	.byte 105
@@ -5561,6 +5529,25 @@ gen_expr:
 	.byte 114
 	.byte 100
 	.byte 105
+	.byte 10
+	.byte 0
+.text
+	leaq .L.str.93(%rip), %rax
+	push %rax
+	leaq printf(%rip), %rax
+	movq %rax, %r10
+	movq $0, %rax
+	callq *%r10
+	addq $8, %rsp
+	jmp .L.end.80
+.L.else.80:
+.data
+.L.str.94:
+	.byte 9
+	.byte 99
+	.byte 113
+	.byte 116
+	.byte 111
 	.byte 10
 	.byte 0
 .text
@@ -5571,27 +5558,8 @@ gen_expr:
 	movq $0, %rax
 	callq *%r10
 	addq $8, %rsp
-	jmp .L.end.80
-.L.else.80:
 .data
 .L.str.95:
-	.byte 9
-	.byte 99
-	.byte 113
-	.byte 116
-	.byte 111
-	.byte 10
-	.byte 0
-.text
-	leaq .L.str.95(%rip), %rax
-	push %rax
-	leaq printf(%rip), %rax
-	movq %rax, %r10
-	movq $0, %rax
-	callq *%r10
-	addq $8, %rsp
-.data
-.L.str.96:
 	.byte 9
 	.byte 105
 	.byte 100
@@ -5607,7 +5575,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.96(%rip), %rax
+	leaq .L.str.95(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5628,7 +5596,7 @@ gen_expr:
 	cmpq $1, %rax
 	jne .L.else.81
 .data
-.L.str.97:
+.L.str.96:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -5650,7 +5618,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.97(%rip), %rax
+	leaq .L.str.96(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5697,7 +5665,7 @@ gen_expr:
 	callq *%r10
 	addq $24, %rsp
 .data
-.L.str.98:
+.L.str.97:
 	.byte 9
 	.byte 99
 	.byte 109
@@ -5719,7 +5687,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.98(%rip), %rax
+	leaq .L.str.97(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5727,7 +5695,7 @@ gen_expr:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.99:
+.L.str.98:
 	.byte 9
 	.byte 115
 	.byte 101
@@ -5741,7 +5709,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.99(%rip), %rax
+	leaq .L.str.98(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5795,7 +5763,7 @@ gen_expr:
 	callq *%r10
 	addq $24, %rsp
 .data
-.L.str.100:
+.L.str.99:
 	.byte 9
 	.byte 99
 	.byte 109
@@ -5817,7 +5785,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.100(%rip), %rax
+	leaq .L.str.99(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5825,7 +5793,7 @@ gen_expr:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.101:
+.L.str.100:
 	.byte 9
 	.byte 115
 	.byte 101
@@ -5840,7 +5808,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.101(%rip), %rax
+	leaq .L.str.100(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5911,7 +5879,7 @@ gen_expr:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.102:
+.L.str.101:
 	.byte 9
 	.byte 99
 	.byte 109
@@ -5930,7 +5898,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.102(%rip), %rax
+	leaq .L.str.101(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5944,7 +5912,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.103:
+.L.str.102:
 	.byte 9
 	.byte 106
 	.byte 101
@@ -5963,7 +5931,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.103(%rip), %rax
+	leaq .L.str.102(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -5984,7 +5952,7 @@ gen_expr:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.104:
+.L.str.103:
 	.byte 9
 	.byte 99
 	.byte 109
@@ -6003,7 +5971,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.104(%rip), %rax
+	leaq .L.str.103(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6017,7 +5985,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.105:
+.L.str.104:
 	.byte 9
 	.byte 106
 	.byte 101
@@ -6036,7 +6004,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.105(%rip), %rax
+	leaq .L.str.104(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6044,7 +6012,7 @@ gen_expr:
 	callq *%r10
 	addq $32, %rsp
 .data
-.L.str.106:
+.L.str.105:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -6063,7 +6031,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.106(%rip), %rax
+	leaq .L.str.105(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6077,7 +6045,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.107:
+.L.str.106:
 	.byte 9
 	.byte 106
 	.byte 109
@@ -6095,7 +6063,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.107(%rip), %rax
+	leaq .L.str.106(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6109,7 +6077,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.108:
+.L.str.107:
 	.byte 46
 	.byte 76
 	.byte 46
@@ -6125,7 +6093,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.108(%rip), %rax
+	leaq .L.str.107(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6133,7 +6101,7 @@ gen_expr:
 	callq *%r10
 	addq $32, %rsp
 .data
-.L.str.109:
+.L.str.108:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -6152,7 +6120,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.109(%rip), %rax
+	leaq .L.str.108(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6166,7 +6134,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.110:
+.L.str.109:
 	.byte 46
 	.byte 76
 	.byte 46
@@ -6180,7 +6148,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.110(%rip), %rax
+	leaq .L.str.109(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6241,7 +6209,7 @@ gen_expr:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.111:
+.L.str.110:
 	.byte 9
 	.byte 99
 	.byte 109
@@ -6260,7 +6228,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.111(%rip), %rax
+	leaq .L.str.110(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6274,7 +6242,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.112:
+.L.str.111:
 	.byte 9
 	.byte 106
 	.byte 110
@@ -6293,7 +6261,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.112(%rip), %rax
+	leaq .L.str.111(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6314,7 +6282,7 @@ gen_expr:
 	callq *%r10
 	addq $16, %rsp
 .data
-.L.str.113:
+.L.str.112:
 	.byte 9
 	.byte 99
 	.byte 109
@@ -6332,7 +6300,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.113(%rip), %rax
+	leaq .L.str.112(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6346,7 +6314,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.114:
+.L.str.113:
 	.byte 9
 	.byte 106
 	.byte 110
@@ -6365,7 +6333,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.114(%rip), %rax
+	leaq .L.str.113(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6373,7 +6341,7 @@ gen_expr:
 	callq *%r10
 	addq $32, %rsp
 .data
-.L.str.115:
+.L.str.114:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -6391,7 +6359,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.115(%rip), %rax
+	leaq .L.str.114(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6405,7 +6373,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.116:
+.L.str.115:
 	.byte 9
 	.byte 106
 	.byte 109
@@ -6423,7 +6391,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.116(%rip), %rax
+	leaq .L.str.115(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6437,7 +6405,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.117:
+.L.str.116:
 	.byte 46
 	.byte 76
 	.byte 46
@@ -6452,7 +6420,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.117(%rip), %rax
+	leaq .L.str.116(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6460,7 +6428,7 @@ gen_expr:
 	callq *%r10
 	addq $32, %rsp
 .data
-.L.str.118:
+.L.str.117:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -6478,7 +6446,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.118(%rip), %rax
+	leaq .L.str.117(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6492,7 +6460,7 @@ gen_expr:
 	push %rax
 	push $1
 .data
-.L.str.119:
+.L.str.118:
 	.byte 46
 	.byte 76
 	.byte 46
@@ -6506,7 +6474,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.119(%rip), %rax
+	leaq .L.str.118(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6550,7 +6518,7 @@ gen_expr:
 	callq *%r10
 	addq $24, %rsp
 .data
-.L.str.120:
+.L.str.119:
 	.byte 9
 	.byte 99
 	.byte 109
@@ -6572,7 +6540,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.120(%rip), %rax
+	leaq .L.str.119(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6590,7 +6558,7 @@ gen_expr:
 	cmpq $1, %rax
 	jne .L.else.87
 .data
-.L.str.121:
+.L.str.120:
 	.byte 9
 	.byte 115
 	.byte 101
@@ -6605,7 +6573,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.121(%rip), %rax
+	leaq .L.str.120(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6615,7 +6583,7 @@ gen_expr:
 	jmp .L.end.87
 .L.else.87:
 .data
-.L.str.122:
+.L.str.121:
 	.byte 9
 	.byte 115
 	.byte 101
@@ -6630,7 +6598,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.122(%rip), %rax
+	leaq .L.str.121(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6685,7 +6653,7 @@ gen_expr:
 	callq *%r10
 	addq $24, %rsp
 .data
-.L.str.123:
+.L.str.122:
 	.byte 9
 	.byte 99
 	.byte 109
@@ -6707,7 +6675,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.123(%rip), %rax
+	leaq .L.str.122(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6725,7 +6693,7 @@ gen_expr:
 	cmpq $1, %rax
 	jne .L.else.89
 .data
-.L.str.124:
+.L.str.123:
 	.byte 9
 	.byte 115
 	.byte 101
@@ -6739,7 +6707,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.124(%rip), %rax
+	leaq .L.str.123(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6749,7 +6717,7 @@ gen_expr:
 	jmp .L.end.89
 .L.else.89:
 .data
-.L.str.125:
+.L.str.124:
 	.byte 9
 	.byte 115
 	.byte 101
@@ -6763,7 +6731,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.125(%rip), %rax
+	leaq .L.str.124(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6818,7 +6786,7 @@ gen_expr:
 	callq *%r10
 	addq $24, %rsp
 .data
-.L.str.126:
+.L.str.125:
 	.byte 9
 	.byte 99
 	.byte 109
@@ -6840,7 +6808,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.126(%rip), %rax
+	leaq .L.str.125(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6858,7 +6826,7 @@ gen_expr:
 	cmpq $1, %rax
 	jne .L.else.91
 .data
-.L.str.127:
+.L.str.126:
 	.byte 9
 	.byte 115
 	.byte 101
@@ -6873,7 +6841,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.127(%rip), %rax
+	leaq .L.str.126(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6883,7 +6851,7 @@ gen_expr:
 	jmp .L.end.91
 .L.else.91:
 .data
-.L.str.128:
+.L.str.127:
 	.byte 9
 	.byte 115
 	.byte 101
@@ -6898,7 +6866,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.128(%rip), %rax
+	leaq .L.str.127(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6953,7 +6921,7 @@ gen_expr:
 	callq *%r10
 	addq $24, %rsp
 .data
-.L.str.129:
+.L.str.128:
 	.byte 9
 	.byte 99
 	.byte 109
@@ -6975,7 +6943,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.129(%rip), %rax
+	leaq .L.str.128(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -6993,7 +6961,7 @@ gen_expr:
 	cmpq $1, %rax
 	jne .L.else.93
 .data
-.L.str.130:
+.L.str.129:
 	.byte 9
 	.byte 115
 	.byte 101
@@ -7007,7 +6975,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.130(%rip), %rax
+	leaq .L.str.129(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7017,7 +6985,7 @@ gen_expr:
 	jmp .L.end.93
 .L.else.93:
 .data
-.L.str.131:
+.L.str.130:
 	.byte 9
 	.byte 115
 	.byte 101
@@ -7031,7 +6999,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.131(%rip), %rax
+	leaq .L.str.130(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7056,7 +7024,7 @@ gen_expr:
 .L.else.92:
 .L.end.92:
 .data
-.L.str.132:
+.L.str.131:
 	.byte 103
 	.byte 101
 	.byte 110
@@ -7080,7 +7048,7 @@ gen_expr:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.132(%rip), %rax
+	leaq .L.str.131(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7102,7 +7070,7 @@ gen:
 	movq %rsp, %rbp
 	subq $0, %rsp
 .data
-.L.str.133:
+.L.str.132:
 	.byte 46
 	.byte 116
 	.byte 101
@@ -7111,7 +7079,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.133(%rip), %rax
+	leaq .L.str.132(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7130,7 +7098,7 @@ gen:
 	cmpq $1, %rax
 	jne .L.else.94
 .data
-.L.str.134:
+.L.str.133:
 	.byte 46
 	.byte 103
 	.byte 108
@@ -7148,7 +7116,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.134(%rip), %rax
+	leaq .L.str.133(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7156,7 +7124,7 @@ gen:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.135:
+.L.str.134:
 	.byte 95
 	.byte 115
 	.byte 116
@@ -7167,7 +7135,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.135(%rip), %rax
+	leaq .L.str.134(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7175,7 +7143,7 @@ gen:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.136:
+.L.str.135:
 	.byte 9
 	.byte 112
 	.byte 117
@@ -7190,7 +7158,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.136(%rip), %rax
+	leaq .L.str.135(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7198,7 +7166,7 @@ gen:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.137:
+.L.str.136:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -7220,7 +7188,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.137(%rip), %rax
+	leaq .L.str.136(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7228,7 +7196,7 @@ gen:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.138:
+.L.str.137:
 	.byte 9
 	.byte 108
 	.byte 101
@@ -7254,7 +7222,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.138(%rip), %rax
+	leaq .L.str.137(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7262,7 +7230,7 @@ gen:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.139:
+.L.str.138:
 	.byte 9
 	.byte 112
 	.byte 117
@@ -7277,7 +7245,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.139(%rip), %rax
+	leaq .L.str.138(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7285,7 +7253,7 @@ gen:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.140:
+.L.str.139:
 	.byte 9
 	.byte 112
 	.byte 117
@@ -7304,7 +7272,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.140(%rip), %rax
+	leaq .L.str.139(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7312,7 +7280,7 @@ gen:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.141:
+.L.str.140:
 	.byte 9
 	.byte 99
 	.byte 97
@@ -7327,7 +7295,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.141(%rip), %rax
+	leaq .L.str.140(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7335,7 +7303,7 @@ gen:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.142:
+.L.str.141:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -7357,7 +7325,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.142(%rip), %rax
+	leaq .L.str.141(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7365,7 +7333,7 @@ gen:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.143:
+.L.str.142:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -7385,7 +7353,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.143(%rip), %rax
+	leaq .L.str.142(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7393,7 +7361,7 @@ gen:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.144:
+.L.str.143:
 	.byte 9
 	.byte 115
 	.byte 121
@@ -7405,7 +7373,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.144(%rip), %rax
+	leaq .L.str.143(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7519,7 +7487,7 @@ gen:
 	push %rax
 	push $1
 .data
-.L.str.145:
+.L.str.144:
 	.byte 46
 	.byte 103
 	.byte 108
@@ -7533,7 +7501,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.145(%rip), %rax
+	leaq .L.str.144(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7549,14 +7517,14 @@ gen:
 	push %rax
 	push $1
 .data
-.L.str.146:
+.L.str.145:
 	.byte 37
 	.byte 115
 	.byte 58
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.146(%rip), %rax
+	leaq .L.str.145(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7564,7 +7532,7 @@ gen:
 	callq *%r10
 	addq $32, %rsp
 .data
-.L.str.147:
+.L.str.146:
 	.byte 9
 	.byte 112
 	.byte 117
@@ -7579,7 +7547,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.147(%rip), %rax
+	leaq .L.str.146(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7587,7 +7555,7 @@ gen:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.148:
+.L.str.147:
 	.byte 9
 	.byte 109
 	.byte 111
@@ -7609,7 +7577,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.148(%rip), %rax
+	leaq .L.str.147(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7625,7 +7593,7 @@ gen:
 	push %rax
 	push $1
 .data
-.L.str.149:
+.L.str.148:
 	.byte 9
 	.byte 115
 	.byte 117
@@ -7645,7 +7613,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.149(%rip), %rax
+	leaq .L.str.148(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7678,7 +7646,7 @@ gen:
 	cmpq $1, %rax
 	jne .L.else.98
 .data
-.L.str.150:
+.L.str.149:
 	.byte 105
 	.byte 110
 	.byte 116
@@ -7736,7 +7704,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.150(%rip), %rax
+	leaq .L.str.149(%rip), %rax
 	push %rax
 	leaq eprintf(%rip), %rax
 	movq %rax, %r10
@@ -7754,7 +7722,7 @@ gen:
 .L.else.98:
 .L.end.98:
 .data
-.L.str.151:
+.L.str.150:
 	.byte 9
 	.byte 108
 	.byte 101
@@ -7764,7 +7732,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.151(%rip), %rax
+	leaq .L.str.150(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7772,7 +7740,7 @@ gen:
 	callq *%r10
 	addq $8, %rsp
 .data
-.L.str.152:
+.L.str.151:
 	.byte 9
 	.byte 114
 	.byte 101
@@ -7780,7 +7748,7 @@ gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.152(%rip), %rax
+	leaq .L.str.151(%rip), %rax
 	push %rax
 	leaq printf(%rip), %rax
 	movq %rax, %r10
@@ -7829,7 +7797,7 @@ new_gen:
 	cmpq $1, %rax
 	jne .L.else.99
 .data
-.L.str.153:
+.L.str.152:
 	.byte 109
 	.byte 101
 	.byte 109
@@ -7857,7 +7825,7 @@ new_gen:
 	.byte 10
 	.byte 0
 .text
-	leaq .L.str.153(%rip), %rax
+	leaq .L.str.152(%rip), %rax
 	push %rax
 	leaq eprintf(%rip), %rax
 	movq %rax, %r10
