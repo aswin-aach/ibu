@@ -5,9 +5,9 @@ on:
 
 jobs:
   update-files:
-	strategy:
-	  matrix:
-	    os: ["ubuntu-latest"]
+    strategy:
+      matrix:
+        os: ["ubuntu-latest"]
     runs-on: ${{ matrix.os }}
 
     steps:
