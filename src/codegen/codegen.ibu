@@ -62,7 +62,7 @@ func gen_addr(g *Gen, node *Node) i32 {
     } else if node.kind == ND_DEREF {
         gen_expr(g, node.lhs);
     } else {
-        // TODO: print error
+        eprintf("Unknown kind of node\n");
     }
     return 0;
 }
